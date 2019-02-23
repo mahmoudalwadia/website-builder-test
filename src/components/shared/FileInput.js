@@ -24,14 +24,14 @@ const Input = styled.input`
 `;
 const Label = styled.label`
   width: 300px;
-  border: 1px solid #e2e2e2;
+  border: 1px solid ${props => props.theme.colors.cardBorder};
   height: 30px;
   display: block;
   padding-left: 8px;
   font-size: 16px;
-  color: #afafaf;
+  color: ${props => props.theme.colors.inputPlaceholder};
   border-radius: 4px;
-  background-color: #fff;
+  background-color: ${props => props.theme.colors.white};
   ${flex.horizontal}
   ${flex.centerHorizontalV}
   &:hover {

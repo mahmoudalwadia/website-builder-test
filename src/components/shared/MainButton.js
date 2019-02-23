@@ -12,18 +12,18 @@ export default MainButton;
 const Button = styled.button`
   min-width: 110px;
   max-width: 150px;
-  background: #2555b1;
+  background: ${props => props.theme.colors.primary};
   border: none;
   padding: 9px 5px;
   font-size: ${props => (props.fontSize ? props.fontSize : 16)}px;
-  color: #fff;
+  color: ${props => props.theme.colors.white};
   font-weight: 900;
   border-radius: 4px;
   transition: 0.5s;
   overflow: hidden;
   &:hover {
     cursor: pointer;
-    background: #004de1;
+    background: ${props => props.theme.colors.ButtonHover};
   }
 `;
 

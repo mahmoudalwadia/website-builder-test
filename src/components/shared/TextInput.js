@@ -25,13 +25,13 @@ export default TextInput;
 
 const Input = styled.input`
   width: 300px;
-  border: 1px solid #e2e2e2;
+  border: 1px solid ${props => props.theme.colors.cardBorder};
   height: 30px;
   padding-left: 8px;
   font-size: 16px;
-  color: #6e6e6e;
+  color: ${props => props.theme.colors.inputText};
   border-radius: 4px;
   &::-webkit-input-placeholder {
-    color: #afafaf;
+    color: ${props => props.theme.colors.inputPlaceholder};
   }
 `;

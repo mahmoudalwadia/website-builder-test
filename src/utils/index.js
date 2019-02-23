@@ -1,4 +1,5 @@
-import HtmlPageContent from './HtmlPageContent';
+import htmlPageContent from './htmlPageContent';
 import saveAsHtml from './saveAsHtml';
-
-export { HtmlPageContent, saveAsHtml };
+import theme from './theme';
+import isImage from './isImage';
+export { htmlPageContent, saveAsHtml, theme, isImage };
